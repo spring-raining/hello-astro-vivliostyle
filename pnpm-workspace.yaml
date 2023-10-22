@@ -1,0 +1,4 @@
+packages:
+  - books/*
+  - themes/*
+  - www

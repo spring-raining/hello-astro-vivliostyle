@@ -1,0 +1,21 @@
+{
+  "name": "my-book-theme",
+  "type": "module",
+  "description": "",
+  "version": "0.0.1",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@vivliostyle/theme-base": "1"
+  },
+  "vivliostyle": {
+    "theme": {
+      "name": "my-book-theme",
+      "author": "",
+      "style": "./theme.css",
+      "category": "misc",
+      "topics": []
+    }
+  }
+}
