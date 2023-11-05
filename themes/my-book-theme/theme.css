@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700);
-@import url(node_modules/@vivliostyle/theme-base/theme-all.css);
+@import url(../@vivliostyle/theme-base/theme-all.css);
 
 :root {
   --vs-font-family: 'Noto Sans JP', sans-serif;

@@ -9,6 +9,7 @@
   "dependencies": {
     "@vivliostyle/theme-base": "1"
   },
+  "main": "theme.css",
   "vivliostyle": {
     "theme": {
       "name": "my-book-theme",
