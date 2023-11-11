@@ -1,0 +1,27 @@
+---
+import BaseHead from '@/components/BaseHead.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
+
+export interface Props {
+  frontmatter?: any;
+  title?: string;
+  description?: string;
+}
+
+const title = Astro.props.title || Astro.props.frontmatter?.title || SITE_TITLE;
+const description =
+  Astro.props.description ||
+  Astro.props.frontmatter?.description ||
+  SITE_DESCRIPTION;
+---
+
+<html lang="ja">
+  <head>
+    <BaseHead {...{ title, description }} />
+  </head>
+  <body>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

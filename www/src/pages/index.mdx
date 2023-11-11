@@ -1,0 +1,37 @@
+---
+layout: '@/layouts/PlainPage.astro'
+---
+
+# Astro & Vivliostyleテンプレートページ
+
+このページは、Webフレームワークである[Astro](https://astro.build/)と、CSS組版のためのライブラリである[Vivilostyle](https://vivliostyle.org/ja/)を組み合わせたテンプレートです。このテンプレートをもとに編集することで、簡単にWebと出版物のハイブリッド開発を始めることができます。
+
+このテンプレートには、以下のようなディレクトリが含まれています。
+
+```
+hello-astro-vivliostyle
+├── books
+│   └── my-first-book
+├── themes
+│   └── my-book-theme
+└── www
+```
+
+それぞれ、
+
+* `books/my-first-book` は出版物を管理するための[Vivliostyle CLI project](https://github.com/vivliostyle/vivliostyle-cli)です。
+* `themes/my-book-theme` はWebや出版物にスタイルを適用するための[Vivliostyle Theme](https://github.com/vivliostyle/themes)です。
+* `www` はWebサイトを管理するためのAstroプロジェクトです。
+
+このテンプレートの `www/astro.config.js` ファイルには、Webと出版物の編集に便利な[Astro Integration](https://astro.build/integrations)があらかじめ設定されています。すでに設定されているツール以外にも、Astro Integrationを通じてTailwindやReact、Vueなどを追加することができます。
+
+このテンプレートにはあらかじめ `my-first-book` という名前のVivliostyle CLI projectが用意されており、`books/my-first-book/vivliostyle.config.js` にプロジェクトの設定があります。また、新しいVivliostyle CLI ProjectやVivliostyle Themeを作りたい場合は、それぞれ `books/` もしくは `themes/` ディレクトリに別の名前のパッケージを置いてください。
+
+テンプレートを使い始めるためのアイディアをいくつか紹介します！
+
+* `www/src/pages/index.mdx` でこのページを編集してみる。
+* `www/src/pages/article/` にある記事をチェックする。
+* `www/src/layouts/ArticlePage.astro` で記事ページのレイアウトをカスタマイズする。
+* `books/my-first-book/manuscript/` のMarkdownファイルで出版物のコンテンツを編集する。
+* my-first-bookの出版物にAstroプロジェクトで作成した記事を追加する。
+* my-book-themeのCSSテーマファイルをAstroプロジェクトに読み込ませる。
